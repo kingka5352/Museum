@@ -277,3 +277,8 @@ body.staff-page footer.footer-card {
   margin-left: 5px;
   line-height: 1.6;
 }
+.intro h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
