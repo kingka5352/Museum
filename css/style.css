@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/museum_background.png') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2e1a0f;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  background-color: #3a4a5c;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  margin: 0 0 10px 0;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: Georgia, serif;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  background-color: #6a7ba2;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: Georgia, serif;
+}
+
+.nav-buttons a:hover {
+  background-color: #4a5e80;
+}
+
+.intro,
+.footer-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #deb887;
+  border-radius: 8px;
+  padding: 20px 20px 20px 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.staff-section {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.staff-card,
+.staff-card.reverse {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  margin-bottom: 10px;
+}
+
+.staff-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.staff-info {
+  flex: 1;
+  line-height: 1.8;
+  text-align: left;
+  font-size: 0.95em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.staff-info h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #2e1a0f;
+}
+
+.staff-box,
+.staff-box.reverse {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.staff-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.staff-box img {
+  width: 280px;
+  height: 220px !important;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.staff-card img {
+  width: 200px;
+  height: auto;
+  margin: 0 10px 0 0;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
+
+.staff-container {
+  margin-bottom: 20px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-card,
+footer.footer-card,
+footer {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: left;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  border-radius: 0 !important;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body.staff-page {
+  background-image: none;
+  background-color: #bfbfbf;
+}
+
+body.staff-page .staff-section {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.staff-page .staff-card:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+body.staff-page footer.footer-card {
+  margin-top: 40px !important;
+}
+
+.collections-buttons {
+  background: none !important;
+  padding: 0 !important;
+  margin: 20px auto !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  max-width: max-content;
+}
+
+.collections-buttons .nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto !important;
+  text-align: center;
+  background: none !important;
+  padding: 0 !important;
+  max-width: max-content;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.main-cards {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  flex: 1 1 30%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px 20px 20px 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #8b4513;
+  border-bottom: 1px solid #ccc;
+}
+
+.card ul,
+.card ol {
+  margin-left: 5px;
+  line-height: 1.6;
+}
