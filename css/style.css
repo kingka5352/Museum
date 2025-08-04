@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -198,7 +198,7 @@ footer {
   background-color: #f0f0f0;
   text-align: left;
   font-size: 0.9em;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 0 !important;
 }
 
@@ -277,12 +277,9 @@ body.staff-page footer.footer-card {
   margin-left: 5px;
   line-height: 1.6;
 }
+
 .intro h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3b104d3d1d2087558caf8e6b7779e3c9b8409f73
