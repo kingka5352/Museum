@@ -3,44 +3,406 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="author" content="Jeongman Park">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    East Asian History Museum
-  </title>
+  <meta name="author" content="Jeongman Park" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collections – East Asian History Museum</title>
   <link href="../css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="collections-page">
   <header class="header">
-    <h1 class="header-title">
-      East Asian History Museum
-    </h1>
+    <div class="header-title">East Asian History Museum</div>
     <nav class="nav-buttons">
-      <a href="../index.html">Home</a>
-      <a href="staff.html">Staff</a>
-      <a href="collections.html">Collections</a>
+      <a href="../index.html" class="nav-button">Home</a>
+      <a href="staff.html" class="nav-button">Staff</a>
+      <a href="collections.html" class="nav-button active">Collections</a>
+      <a href="souvenir.html" class="nav-button">Shop</a>
+      <a href="login.html" class="nav-button">Login</a>
     </nav>
   </header>
 
-  <div class="page-container">
-    <div class="nav-buttons" style="display: flex; justify-content: center; gap: 20px;">
-      <a href="archeology.html">Archaeology</a>
-      <a href="anthropology.html">Anthropology</a>
-      <a href="histories.html">Histories</a>
-    </div>
+  <main class="page-container collections-main">
+    <nav class="collections-subnav">
+      <button type="button" class="nav-button" onclick="showSection('archeology')">Archaeology</button>
+      <button type="button" class="nav-button" onclick="showSection('anthropology')">Anthropology</button>
+      <button type="button" class="nav-button" onclick="showSection('assemblages')">Assemblages</button>
+      <button type="button" class="nav-button" onclick="showSection('histories')">Histories</button>
+    </nav>
 
-    <div id="archeology"></div>
-    <div id="anthropology"></div>
-    <div id="history"></div>
+    <p class="ai-attribution">
+      <em>
+        The content in this gallery was entirely created by AI under human direction. It was then curated, reviewed and
+        edited by a human before being published. AI contributed to the concept, the written and visual content, and
+        provided coding guidance to enhance the site’s layout and design.
+      </em>
+    </p>
+
+    <section id="archeology" class="collection-section">
+      <h1 class="section-title">Archaeology</h1>
+      <div class="grid-container">
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections1.png" alt="Celestial Jade Compass"
+              title="Celestial Jade Compass — jade disc with constellation engravings" onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Celestial Jade Compass</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Translucent jade with embedded gold veins</div>
+                <div><strong>Size/Weight/Shape:</strong> Circular disc, 15 cm diameter, 0.5 kg</div>
+                <div><strong>Physical Properties:</strong> Smooth polished surface, slight translucency</div>
+                <div><strong>Estimated Age:</strong> Approximately 1,200 years old</div>
+                <div><strong>Preservation State:</strong> Mostly complete, slight edge erosion</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Gyeongju ancient burial mound</div>
+                <div><strong>Likely Purpose:</strong> Ceremonial navigational aid</div>
+                <div><strong>Evidence of Use:</strong> Wear patterns around compass pivot</div>
+                <div><strong>Manufacture Clues:</strong> Fine carving marks, symmetrical engravings</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Silk fragments and bronze mirror shards</div>
+                <div><strong>Burial or Habitat Context:</strong> Tomb chamber near priest remains</div>
+                <div><strong>Symbolism:</strong> Constellation motifs for guidance</div>
+                <div><strong>Comparison:</strong> Resembles Chinese compasses more than Korean jade work</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections2.png" alt="Forbidden Inkstone of Whispers"
+              title="Forbidden Inkstone of Whispers — Tang inkstone with mythical borders" onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Forbidden Inkstone of Whispers</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Polished black stone with faint red veins</div>
+                <div><strong>Size/Weight/Shape:</strong> Rectangular slab, 25×15 cm, 2 kg</div>
+                <div><strong>Physical Properties:</strong> Dense, smooth texture retaining slight glow</div>
+                <div><strong>Estimated Age:</strong> Circa 1,200 years (Tang dynasty)</div>
+                <div><strong>Preservation State:</strong> Pristine, unused surface</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Underground library ruins near Luoyang</div>
+                <div><strong>Likely Purpose:</strong> Calligraphy or coded messaging</div>
+                <div><strong>Evidence of Use:</strong> None; appears intentionally hidden</div>
+                <div><strong>Manufacture Clues:</strong> Ornate carved mythical borders</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Scroll cases and script fragments</div>
+                <div><strong>Burial or Habitat Context:</strong> Sealed subterranean chamber</div>
+                <div><strong>Symbolism:</strong> Protective carvings against evil</div>
+                <div><strong>Comparison:</strong> Unique luminescence unlike other inkstones</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections3.png" alt="Phantom Sakura Blade Fragment"
+              title="Phantom Sakura Blade Fragment — forged steel fragment with sakura motifs"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Phantom Sakura Blade Fragment</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Polished steel with iridescent patina</div>
+                <div><strong>Size/Weight/Shape:</strong> Curved fragment, 30 cm, 0.9 kg</div>
+                <div><strong>Physical Properties:</strong> Well-tempered, glossy finish</div>
+                <div><strong>Estimated Age:</strong> Circa 800 years (Kamakura period)</div>
+                <div><strong>Preservation State:</strong> Broken but intact patina</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Shrine ruins near Mount Fuji</div>
+                <div><strong>Likely Purpose:</strong> Ritual offering blade</div>
+                <div><strong>Evidence of Use:</strong> Minimal wear, faint residue</div>
+                <div><strong>Manufacture Clues:</strong> Sakura motifs etched by master smith</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Ceremonial robes and altar bells</div>
+                <div><strong>Burial or Habitat Context:</strong> Shrine altar setting</div>
+                <div><strong>Symbolism:</strong> Sakura for purity and transience</div>
+                <div><strong>Comparison:</strong> Iridescent effect rare among blades</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections7.png" alt="Spirit Vessel of the Triple Realms"
+              title="Spirit Vessel of the Triple Realms — glazed porcelain with bronze rim and inset jade disks"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Spirit Vessel of the Triple Realms</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Glazed porcelain, bronze, jade</div>
+                <div><strong>Size/Weight/Shape:</strong> 35 cm tall, 1.2 kg, bottle-shaped with flared mouth</div>
+                <div><strong>Physical Properties:</strong> Crackled glaze; jade disks inset; bronze-rimmed mouth</div>
+                <div><strong>Estimated Age:</strong> Circa 900 CE</div>
+                <div><strong>Preservation State:</strong> Intact with minor glaze crackling</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Goryeo dynasty tomb near Gaeseong</div>
+                <div><strong>Likely Purpose:</strong> Spirit container used in funerary rites</div>
+                <div><strong>Evidence of Use:</strong> Burn residue near rim; soot inside base</div>
+                <div><strong>Manufacture Clues:</strong> Wheel-thrown with cast bronze and inset jade disks</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Ritual textiles and incense ash</div>
+                <div><strong>Burial or Habitat Context:</strong> Sealed niche beside main coffin</div>
+                <div><strong>Symbolism:</strong> Transition between realms; protection during journey to afterlife</div>
+                <div><strong>Comparison:</strong> Unusual mix of ceramic and jade, high ritual significance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections8.png" alt="Inkveil Lantern of Secrets"
+              title="Inkveil Lantern of Secrets — silk and bamboo lantern with obsidian bead tassels"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Inkveil Lantern of Secrets</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Silk, bamboo, obsidian bead tassels</div>
+                <div><strong>Size/Weight/Shape:</strong> 28 cm diameter, 0.4 kg, spherical collapsible lantern</div>
+                <div><strong>Physical Properties:</strong> Hand-painted silk panels; obsidian beads in fringe</div>
+                <div><strong>Estimated Age:</strong> Circa 1700 CE</div>
+                <div><strong>Preservation State:</strong> Fragile with slight tear on one panel</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Edo-period storeroom in a Kyoto temple</div>
+                <div><strong>Likely Purpose:</strong> Used in ritual processions or coded communication</div>
+                <div><strong>Evidence of Use:</strong> Wax drips on inner surface; frayed silk ties</div>
+                <div><strong>Manufacture Clues:</strong> Hand-painted panels; obsidian beads worked into tassels</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Sealed scrolls and ceremonial robe fragments</div>
+                <div><strong>Burial or Habitat Context:</strong> Storage above ceremonial altar</div>
+                <div><strong>Symbolism:</strong> Light in darkness; protection of secrets</div>
+                <div><strong>Comparison:</strong> Rare material use; linked to shadow rituals and sacred texts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="anthropology" class="collection-section is-hidden">
+      <h1 class="section-title">Anthropology</h1>
+      <div class="grid-container">
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections4.png" alt="Eclipsed Moon Mask"
+              title="Eclipsed Moon Mask — lacquered wood with mother-of-pearl, worn for eclipse rites"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Eclipsed Moon Mask</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Lacquered wood with mother-of-pearl</div>
+                <div><strong>Size/Weight/Shape:</strong> Full-face mask, 25 cm, 0.3 kg</div>
+                <div><strong>Physical Properties:</strong> Lightweight, reflective inlay</div>
+                <div><strong>Estimated Age:</strong> 400 years</div>
+                <div><strong>Preservation State:</strong> Pristine, minor scratches</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Andong folk-village dwelling</div>
+                <div><strong>Likely Purpose:</strong> Shamanistic eclipse ritual</div>
+                <div><strong>Evidence of Use:</strong> Lacquer fading inside edges</div>
+                <div><strong>Manufacture Clues:</strong> Hand-carved detailed patterns</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Ritual costumes, musical instruments</div>
+                <div><strong>Burial or Habitat Context:</strong> Household storage</div>
+                <div><strong>Symbolism:</strong> Eclipse as spiritual transformation</div>
+                <div><strong>Comparison:</strong> Unique blend of traditional and esoteric motifs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections5.png" alt="Veil of the Silent Emperor"
+              title="Veil of the Silent Emperor — silk with silver-thread embroidery from a Ming tomb"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Veil of the Silent Emperor</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Fine silk with silver-thread embroidery</div>
+                <div><strong>Size/Weight/Shape:</strong> Head veil, 70×30 cm</div>
+                <div><strong>Physical Properties:</strong> Sheer, delicate weave</div>
+                <div><strong>Estimated Age:</strong> 500 years (Ming dynasty)</div>
+                <div><strong>Preservation State:</strong> Fragile, minor tears</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Tomb near Nanjing</div>
+                <div><strong>Likely Purpose:</strong> Mourning and respect veil</div>
+                <div><strong>Evidence of Use:</strong> Fading and fabric wear</div>
+                <div><strong>Manufacture Clues:</strong> Dragon and cloud motifs hand-stitched</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Jade pendants, scrolls</div>
+                <div><strong>Burial or Habitat Context:</strong> Tomb burial goods</div>
+                <div><strong>Symbolism:</strong> Dragons for authority, clouds for transition</div>
+                <div><strong>Comparison:</strong> Embroidery style rare on veils</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/collections6.png" alt="Shadow Silk Fan"
+              title="Shadow Silk Fan — silk and bamboo fan for shadow theater" onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Shadow Silk Fan</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Silk and bamboo with obsidian fragments</div>
+                <div><strong>Size/Weight/Shape:</strong> Folding fan, 30 cm span</div>
+                <div><strong>Physical Properties:</strong> Lightweight, stony inlays</div>
+                <div><strong>Estimated Age:</strong> 350 years (Edo period)</div>
+                <div><strong>Preservation State:</strong> Good condition</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Merchant house in Osaka</div>
+                <div><strong>Likely Purpose:</strong> Shadow theater prop</div>
+                <div><strong>Evidence of Use:</strong> Silk wear and polished ribs</div>
+                <div><strong>Manufacture Clues:</strong> Expert weaving, obsidian embedding</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Theater masks and scripts</div>
+                <div><strong>Burial or Habitat Context:</strong> Stored in household</div>
+                <div><strong>Symbolism:</strong> Obsidian for hidden truths</div>
+                <div><strong>Comparison:</strong> Unusual material mix for fans</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="assemblages" class="collection-section is-hidden">
+      <h1 class="section-title">Assemblages</h1>
+      <div class="grid-container">
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/assemblage1.png" alt="Shrine of the Crimson Petals"
+              title="Shrine of the Crimson Petals — mixed-media Heian shrine for blossom rites"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Shrine of the Crimson Petals</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Lacquered wood, silk, bronze, cherry blossom resin</div>
+                <div><strong>Size/Weight/Shape:</strong> Platform 40×30 cm, 3.5 kg</div>
+                <div><strong>Physical Properties:</strong> Mixed media with lacquer finish</div>
+                <div><strong>Estimated Age:</strong> Circa 900 CE</div>
+                <div><strong>Preservation State:</strong> Partial, discoloration</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Kyoto temple subterranean altar</div>
+                <div><strong>Likely Purpose:</strong> Seasonal blossom rites</div>
+                <div><strong>Evidence of Use:</strong> Resin staining, fabric fraying</div>
+                <div><strong>Manufacture Clues:</strong> Cherry blossom motifs hand-carved</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Incense bowls, prayer slips, calendar fragments</div>
+                <div><strong>Burial or Habitat Context:</strong> Sealed near water channels</div>
+                <div><strong>Symbolism:</strong> Impermanence and rebirth</div>
+                <div><strong>Comparison:</strong> Unique mixed-media composition</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-img-col">
+            <img src="../images/collections/assemblage2.png" alt="Tomb Offering of the Whispering Scholars"
+              title="Tomb Offering of the Whispering Scholars — Song dynasty scholar’s grave assemblage"
+              onclick="openModal(this)" />
+          </div>
+          <div class="artifact-info-col">
+            <h3>Tomb Offering of the Whispering Scholars</h3>
+            <div class="artifact-meta-grid">
+              <div class="meta-col">
+                <div><strong>Material:</strong> Jade, paper, bamboo, inkstone, silk thread</div>
+                <div><strong>Size/Weight/Shape:</strong> Case 45 cm, inkstone 25×15 cm, 4 kg</div>
+                <div><strong>Physical Properties:</strong> Carved jade and bamboo with silk bindings</div>
+                <div><strong>Estimated Age:</strong> Circa 1100 CE</div>
+                <div><strong>Preservation State:</strong> Excellent, minor cracks</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Location Found:</strong> Scholar’s tomb near Hangzhou</div>
+                <div><strong>Likely Purpose:</strong> Scholarly grave tribute</div>
+                <div><strong>Evidence of Use:</strong> Ink residue, creased scrolls</div>
+                <div><strong>Manufacture Clues:</strong> Jade seal, semi-cursive script</div>
+              </div>
+              <div class="meta-col">
+                <div><strong>Found With:</strong> Brush case, writing cloth, qilin figurine</div>
+                <div><strong>Burial or Habitat Context:</strong> Sealed wooden chamber</div>
+                <div><strong>Symbolism:</strong> Virtue and wisdom</div>
+                <div><strong>Comparison:</strong> Rare intact scholar assemblage</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="histories" class="collection-section is-hidden">
+      <h1 class="section-title">Histories</h1>
+      <div class="grid-container">
+        <p>Coming soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" class="modal-content"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Enlarged artifact" />
+    <div id="modal-caption" class="caption"></div>
   </div>
 
   <footer class="footer-card">
     This is a fictitious website created purely for academic purposes. The content on this site was conceived by a human
-    and created by AI. The Images were created by AI and curated, edited, reviewed, verified, validated, and augmented
-    by a human.
+    and created by AI. The images were generated by AI and then curated, edited, reviewed, verified, validated, and
+    augmented by a human.
   </footer>
+
+  <script>
+    function showSection(section) {
+      const sections = document.querySelectorAll('.collection-section');
+      sections.forEach(s => s.classList.add('is-hidden'));
+      const target = document.getElementById(section);
+      if (target) target.classList.remove('is-hidden');
+    }
+  </script>
+  <script src="../js/modal.js"></script>
 </body>
 
 </html>
