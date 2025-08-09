@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Jeongman Park" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Souvenir Shop – East Asian History Museum</title>
+  <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body class="souvenir-page">
+  <header class="header">
+    <div class="header-title">East Asian History Museum</div>
+    <nav class="nav-buttons">
+      <a href="../index.html" class="nav-button">Home</a>
+      <a href="staff.html" class="nav-button">Staff</a>
+      <a href="collections.html" class="nav-button">Collections</a>
+      <a href="souvenir.html" class="nav-button active" aria-current="page">Shop</a>
+      <a href="login.html" class="nav-button">Login</a>
+    </nav>
+  </header>
+
+  <main class="page-container collections-main">
+    <section class="collection-section souvenir-section">
+      <nav class="collections-subnav" aria-label="Shop actions">
+        <a href="cart.html" class="cart-link nav-button" aria-label="Open shopping cart">
+          <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 3h2l2.2 10.4a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6l1.2-6.4H7.1" />
+            <circle cx="10" cy="20" r="1.8" />
+            <circle cx="18" cy="20" r="1.8" />
+          </svg>
+          <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+        </a>
+      </nav>
+
+      <p class="ai-attribution">
+        <em>
+          The content in this shop was created by AI under human direction. It was then curated, reviewed and edited by
+          a
+          human before being published. AI contributed to the concept, the written and visual content, and provided
+          coding
+          guidance to enhance the site’s layout and design.
+        </em>
+      </p>
+
+      <div class="container">
+        <h1 class="section-title">Souvenir List</h1>
+
+        <div class="grid shop-container">
+          <div class="card souvenir-item" data-id="item001">
+            <img src="../images/souvenir/souvenir1.png" alt="Miniature compass rose replica in polished jade"
+              title="Miniature compass rose replica in polished jade with gold constellation etchings"
+              onclick="openModal(this)" />
+            <h3>Jade Compass Rose Keychain</h3>
+            <p>Crafted from polished jade, this keychain is inspired by a ceremonial navigation tool discovered in a
+              Silla-era tomb in Gyeongju, Korea. Believed to guide ancient maritime journeys, it was used in shamanic
+              rituals to seek celestial protection and orientation.</p>
+            <p class="price"><strong>Price:</strong> $12.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Jade Compass Rose Keychain to Cart" onclick="addToCart('item001')">Add
+              Jade Compass Rose Keychain to Cart</button>
+          </div>
+
+          <div class="card souvenir-item" data-id="item002">
+            <img src="../images/souvenir/souvenir2.png" alt="Framed moon-and-star ceremonial mask art"
+              title="Decorative framed version of the moon-and-star inlaid ceremonial mask" onclick="openModal(this)" />
+            <h3>Celestial Moon Mask – Framed</h3>
+            <p>This framed replica features lacquered wood and mother-of-pearl inlay, modeled after a ritual mask found
+              in
+              a traditional dwelling in Andong, Korea. The original was worn during eclipse ceremonies to symbolize
+              spiritual transformation in Korean Talchum dances.</p>
+            <p class="price"><strong>Price:</strong> $28.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Celestial Moon Mask – Framed to Cart" onclick="addToCart('item002')">Add
+              Celestial Moon Mask – Framed to Cart</button>
+          </div>
+
+          <div class="card souvenir-item" data-id="item003">
+            <img src="../images/souvenir/souvenir3.png" alt="Chef’s knife with floral-etched blade"
+              title="Kitchen knife with floral-etched blade inspired by ancient ceremonial fragments"
+              onclick="openModal(this)" />
+            <h3>Cherry Blossom Chef’s Knife</h3>
+            <p>Modeled after a ceremonial blade fragment found near Mount Fuji in Honshu, Japan, this high-carbon steel knife features
+            cherry blossom etching. The original was likely used for ritual offerings during the Kamakura period, reflecting beauty
+            and reverence in Japanese tradition.</p>
+            <p class="price"><strong>Price:</strong> $24.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Cherry Blossom Chef’s Knife to Cart" onclick="addToCart('item003')">Add
+              Cherry Blossom Chef’s Knife to Cart</button>
+          </div>
+
+          <div class="card souvenir-item" data-id="item004">
+            <img src="../images/souvenir/souvenir4.png" alt="Cherry blossom paper lantern lamp"
+              title="Traditional cherry blossom paper lantern adapted into a soft indoor lamp"
+              onclick="openModal(this)" />
+            <h3>Paper Lantern Table Lamp</h3>
+            <p>Made from bamboo and mulberry paper, this lamp reimagines a lantern found in a forest shrine near Kyoto.
+              The original was used during Muromachi-era rituals to honor Yokai spirits, believed to carry sacred light
+              through ceremonial nights.</p>
+            <p class="price"><strong>Price:</strong> $32.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Paper Lantern Table Lamp to Cart" onclick="addToCart('item004')">Add
+              Paper
+              Lantern Table Lamp to Cart</button>
+          </div>
+
+          <div class="card souvenir-item" data-id="item005">
+            <img src="../images/souvenir/souvenir5.png" alt="Tumbler styled after classic Korean celadon"
+              title="Tumbler styled after classic Korean celadon with jade inlay accent" onclick="openModal(this)" />
+            <h3>Celadon Tumbler</h3>
+            <p>Crafted in jade-toned stoneware, this tumbler is inspired by the "Spirit Vessel of the Triple Realms"—a glazed porcelain
+            form with a bronze-rimmed mouth and inset jade disks—excavated from a Goryeo-dynasty tomb near Gaeseong. The original
+            served as a spirit container in funerary rites; this piece carries that symbolism into modern tea rituals.</p>
+            <p class="price"><strong>Price:</strong> $16.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Celadon Tumbler to Cart" onclick="addToCart('item005')">Add Celadon
+              Tumbler to Cart</button>
+          </div>
+
+          <div class="card souvenir-item" data-id="item006">
+            <img src="../images/souvenir/souvenir6.png" alt="Postcard featuring twin dragons and clouds"
+              title="Horizontal postcard featuring twin dragons and clouds with writing space"
+              onclick="openModal(this)" />
+            <h3>Dragon Scroll Postcard</h3>
+            <p>Printed on rice paper, this postcard design features twin dragons and clouds, referencing a silk burial
+              veil found in a Ming dynasty tomb near Nanjing. Dragons symbolized power and clouds the journey to the
+              afterlife in imperial mourning rites.</p>
+            <p class="price"><strong>Price:</strong> $3.00</p>
+            <input type="number" min="1" value="1" class="qty-input" aria-label="Quantity" />
+            <button class="btn" aria-label="Add Dragon Scroll Postcard to Cart" onclick="addToCart('item006')">Add
+              Dragon
+              Scroll Postcard to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img" class="modal-content"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Enlarged souvenir" />
+    <div id="modal-caption" class="caption"></div>
+  </div>
+
+  <footer class="footer-card">
+    This is a fictitious website created purely for academic purposes. The content on this site was conceived by a human
+    and created by AI. The images were generated by AI and then curated, edited, reviewed, verified, validated, and
+    augmented by a human.
+  </footer>
+
+  <script>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      if (p.get('order') === 'success' || (document.referrer && document.referrer.indexOf('checkout.html') !== -1)) {
+        try { localStorage.removeItem('cart'); } catch (e) { }
+      }
+    })();
+  </script>
+  <script src="../js/cart-common.js" defer></script>
+  <script src="../js/modal.js" defer></script>
+  <script src="../js/souvenir.js" defer></script>
+</body>
+
+</html>
