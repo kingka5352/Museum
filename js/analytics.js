@@ -75,17 +75,3 @@ push({t:"pageview", ts: now(), vid, path: location.pathname + location.search, t
 
   document.addEventListener("keydown", (e)=>{ if(e.ctrlKey && e.shiftKey && e.code === "KeyE"){ exportCSV(); } });
 })();
-(function addFavicon(){
-  try {
-    let link = document.querySelector('link[rel~="icon"]');
-    if (!link) {
-      link = document.createElement('link');
-      link.rel = 'icon';
-      document.head.appendChild(link);
-    }
-    link.type = 'image/svg+xml';
-    link.sizes = 'any';
-    link.href =
-      'data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 128 128%22%3E%3Crect width%3D%22100%25%22 height%3D%22100%25%22 fill%3D%22%231f2937%22/%3E%3Ctext x%3D%2250%25%22 y%3D%2250%25%22 dy%3D%22.35em%22 text-anchor%3D%22middle%22 font-family%3D%22sans-serif%22 font-size%3D%2284%22 fill%3D%22%23ffffff%22%3E%E6%9D%B1%3C/text%3E%3C/svg%3E';
-  } catch(e) {}
-})();
